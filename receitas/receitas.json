@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Bolo de Chocolate",
+    "description": "Delicioso bolo fofinho de chocolate.",
+    "image": "bolo-de-chocolate.jpg",
+    "data": "2025-06-10"
+  },
+  {
+    "id": 2,
+    "title": "Salada Colorida",
+    "description": "Salada saudável e refrescante.",
+    "image": "salada-colorida.jpg",
+    "data": "2025-06-09"
+  },
+  {
+    "id": 3,
+    "title": "Macarrão Cremoso",
+    "description": "Macarrão ao molho branco irresistível.",
+    "image": "macarrao-cremoso.jpg",
+    "data": "2025-06-08"
+  }
+]
