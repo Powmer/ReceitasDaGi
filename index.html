@@ -1,47 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Receitas da Gi</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Receitas da Gi</title>
+<link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header>
-    <h1>Receitas da Gi</h1>
+    <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+    <img src="img/logo.png" alt="Logo Receitas da Gi" height="100" />
   </header>
 
+  <aside id="sidebar" class="sidebar">
+    <button onclick="toggleSidebar()">×</button>
+    <a href="#nova-receita">Nova Receita</a>
+    <a href="#principais">Receitas Principais</a>
+    <a href="#contato">Contato</a>
+  </aside>
+
   <main>
-    <section class="receita">
-      <h2>Bolo de Cenoura</h2>
-      <p><strong>Ingredientes:</strong></p>
-      <ul>
-        <li>3 cenouras médias</li>
-        <li>4 ovos</li>
-        <li>1 xícara de óleo</li>
-        <li>2 xícaras de açúcar</li>
-        <li>2 e 1/2 xícaras de farinha de trigo</li>
-        <li>1 colher de sopa de fermento</li>
-      </ul>
-      <p><strong>Modo de preparo:</strong> Bata tudo no liquidificador, adicione o fermento por último e asse por 40 minutos a 180°C.</p>
+    <section id="nova-receita">
+      <h2>Novas Receitas</h2>
+      <div class="nova-receita-container"></div>
     </section>
 
-    <section class="receita">
-      <h2>Pão de Queijo Mineiro</h2>
-      <p><strong>Ingredientes:</strong></p>
-      <ul>
-        <li>500g de polvilho azedo</li>
-        <li>200ml de leite</li>
-        <li>100ml de óleo</li>
-        <li>2 ovos</li>
-        <li>250g de queijo minas ralado</li>
-      </ul>
-      <p><strong>Modo de preparo:</strong> Misture tudo, enrole em bolinhas e leve ao forno a 200°C por 25 minutos.</p>
+    <section id="principais">
+      <h2>Receitas Principais</h2>
+      <div class="grid-receitas"></div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Receitas da Gi</p>
+    &copy; 2025 Receitas da Gi. Todos os direitos reservados.
   </footer>
+
+  <script src="js/scripts.js"></script>
 </body>
 </html>
